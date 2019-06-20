@@ -18,7 +18,7 @@ s = Student.new(Faker::Name.name, rand(11..20))
   s.report_card.add_grade("History", rand(0..100))
   s.report_card.add_grade("English", rand(0..100))
   s.report_card.add_grade("Science", rand(0..100))
-  s.show
+  return s #the s alone before just worked as a return value for the grade variables
 end
 
 # Generate our students
